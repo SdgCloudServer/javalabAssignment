@@ -3,6 +3,9 @@ interface Area{
 	double calculate();
 	double PI=3.14;
 }
+interface Display{
+    void show();
+}
 class Rectangle implements Area{
 	double length,breadth;
 	void getVal(double length,double breadth){
@@ -11,7 +14,10 @@ class Rectangle implements Area{
 	}
 	public double calculate(){
 		return (length*breadth);
-}
+    }
+    public void show(){
+        System.out.println(length + " ."+ breadth);
+    }
 }
  class  Circle implements Area{
 	double radius;
@@ -21,8 +27,11 @@ class Rectangle implements Area{
 	public double calculate(){
 		return (PI*radius*radius);
 	}
+    public void show(){
+        System.out.println(radius);
+    }
 }
-public class Q1{
+public class Q2{
 	public static void main(String args[]){
 		Rectangle rec=new Rectangle();
 		Scanner s=new Scanner(System.in);
