@@ -13,7 +13,7 @@ class Rectangle implements Area{
 		return (length*breadth);
 }
 }
- class  circle implements Area{
+ class  Circle implements Area{
 	double radius;
 	void getVal(double radius){
 		this.radius=radius;
@@ -30,7 +30,7 @@ public class Q1{
         rec.getVal(s.nextDouble(),s.nextDouble());
 		System.out.println("Area Of Rectangle:" + rec.calculate());
 
-        circle cir=new circle();
+        Circle cir=new Circle();
         System.out.println("Enter The Radis Of Circle:");
         cir.getVal(s.nextDouble());
 		System.out.println("Area Of Circle:" + cir.calculate());
