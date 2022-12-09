@@ -12,7 +12,7 @@ class Q2
         {
             if(i==1)
             {
-                continue;
+                continue;//Added Continue For Continuation
             }
             else
             {
